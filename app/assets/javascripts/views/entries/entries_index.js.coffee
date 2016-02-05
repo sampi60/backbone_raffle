@@ -22,6 +22,7 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
     event.preventDefault()
     attributes = name: $('#new_entry_name').val()
     @collection.create attributes,
+      wait:true
       success: -> $('#new_entry')[0].reset()
       error: @handleError
 
