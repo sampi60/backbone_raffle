@@ -14,7 +14,7 @@ class EntriesController < ApplicationController
   end
 
   def update
-    respond_with Entry.create(params[:id], permitted_params)
+    respond_with Entry.update(params[:id], permitted_params)
   end
 
   def destroy

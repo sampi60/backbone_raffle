@@ -4,6 +4,7 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
 
   events:
     'submit #new_entry': 'createEntry'
+    'click #draw': 'drawWinner'
 
   initialize: ->
     @collection.on('reset', @render, this)
@@ -17,6 +18,10 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
   appendEntry: (entry) ->
     view = new BackboneRaffler.Views.Entry(model: entry)
     $('#entries').append(view.render().el)
+
+  drawWinner: (event) ->
+    event.preventDefault()
+    @collection.drawWinner()
 
   createEntry: (event) ->
     event.preventDefault()
