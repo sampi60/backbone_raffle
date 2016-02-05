@@ -3,7 +3,9 @@ window.BackboneRaffler =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new BackboneRaffler.Routers.Entries()
+    Backbone.history.start()
 
 $(document).ready ->
   BackboneRaffler.initialize()
