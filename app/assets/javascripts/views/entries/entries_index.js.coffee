@@ -21,3 +21,4 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
   createEntry: (event) ->
     event.preventDefault()
     @collection.create name: $('#new_entry_name').val()
+    $('#new_entry')[0].reset()
