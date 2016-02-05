@@ -3,5 +3,5 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
   template: JST['entries/index']
 
   render: ->
-    $(@el).html(@template())
+    $(@el).html(@template(entries: @collection))
     this
