@@ -5,7 +5,7 @@ window.BackboneRaffler =
   Routers: {}
   initialize: ->
     new BackboneRaffler.Routers.Entries()
-    Backbone.history.start()
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   BackboneRaffler.initialize()
