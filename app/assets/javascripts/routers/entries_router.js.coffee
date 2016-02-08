@@ -5,7 +5,7 @@ class BackboneRaffler.Routers.Entries extends Backbone.Router
 
   initialize: ->
     @collection = new BackboneRaffler.Collections.Entries()
-    @collection.fetch({ reset: true })
+    @collection.reset($('#container').data('entries'))
 
   index: ->
     view = new BackboneRaffler.Views.EntriesIndex(collection: @collection)

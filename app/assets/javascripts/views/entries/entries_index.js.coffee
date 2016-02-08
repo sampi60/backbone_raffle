@@ -15,9 +15,9 @@ class BackboneRaffler.Views.EntriesIndex extends Backbone.View
     @collection.each(@appendEntry)
     this
 
-  appendEntry: (entry) ->
+  appendEntry: (entry) =>
     view = new BackboneRaffler.Views.Entry(model: entry)
-    $('#entries').append(view.render().el)
+    @$('#entries').append(view.render().el)
 
   drawWinner: (event) ->
     event.preventDefault()
