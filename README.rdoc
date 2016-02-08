@@ -1,28 +1,17 @@
-== README
+== Resources:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+RailsCasts (pro)
 
-Things you may want to cover:
+* http://railscasts.com/episodes/323-backbone-on-rails-part-1
 
-* Ruby version
+* http://railscasts.com/episodes/325-backbone-on-rails-part-2
 
-* System dependencies
+RailsCasts (reloaded)
 
-* Configuration
+* https://www.youtube.com/watch?v=lRuBxG7rTX4
 
-* Database creation
+* https://www.youtube.com/watch?v=98oUGEz_y4g
 
-* Database initialization
+github.com/paul-ylz/raffler-railscast-backbone-tutorial - rails 4.1.5 based completed tutorial
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* https://github.com/paul-ylz/raffler-railscast-backbone-tutorial
